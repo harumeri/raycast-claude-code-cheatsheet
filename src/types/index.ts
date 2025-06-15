@@ -1,3 +1,6 @@
+export type CategoryType = "all" | "basic" | "flag" | "slash" | "thinking" | "settings" | "environment";
+export type BudgetType = "max" | "mid" | "min";
+
 export interface Command {
   id: string;
   name: string;
@@ -8,13 +11,13 @@ export interface Command {
   warning?: boolean;
   isNew?: boolean;
   alternative?: string;
-  category: "basic" | "flag" | "slash" | "thinking" | "settings" | "environment";
+  category: Exclude<CategoryType, "all">;
   tags: string[];
 }
 
 export interface ThinkingKeyword {
   keyword: string;
-  budget: "max" | "mid" | "min";
+  budget: BudgetType;
   tokens: number;
   description: string;
   example?: string;
@@ -31,6 +34,3 @@ export interface Section {
 export interface CheatsheetData {
   sections: Section[];
 }
-
-export type CategoryType = "all" | "basic" | "flag" | "slash" | "thinking" | "settings" | "environment";
-export type BudgetType = "max" | "mid" | "min";
