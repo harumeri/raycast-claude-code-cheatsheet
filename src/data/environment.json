@@ -198,7 +198,7 @@
     {
       "id": "env-max-thinking-tokens",
       "name": "MAX_THINKING_TOKENS",
-      "description": "Force a thinking for the model budget.",
+      "description": "Sets the maximum token limit for the model's internal 'thinking' process, allowing for more complex reasoning.",
       "usage": "export MAX_THINKING_TOKENS=\"8192\"",
       "category": "environment",
       "tags": ["model", "tokens", "budget"]
