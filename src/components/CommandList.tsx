@@ -28,7 +28,7 @@ export function CommandList() {
       sections = sections.filter(s => s.id === selectedCategory);
     }
 
-    // 2. Filter by search text
+    // 2. Return early if no search text
     if (!searchText) {
       return sections;
     }
