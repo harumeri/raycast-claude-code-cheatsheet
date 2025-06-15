@@ -8,7 +8,7 @@
       "name": "permissions",
       "description": "A list of explicitly allowed or denied tools and commands. Use this to create a safe, restricted environment or block sensitive operations.",
       "usage": "\"permissions\": {\n  \"allow\": [\"Bash(npm run lint)\"],\n  \"deny\": [\"Bash(curl:*)\"]\n}",
-      "example": "{\n  \"permissions\": {\n    \"allow\": [\n      \"Bash(npm run test:*)\"\n    ],\n    \"deny\": [\n      \"Bash(sudo *)\"\n    ]\n  }\n}",
+      "example": "{\n  \"permissions\": {\n    \"allow\": [\n      \"Bash(npm run test:*)\"\n    ],\n    \"deny\": [\n      \"Bash(curl *)\"\n    ]\n  }\n}",
       "category": "settings",
       "tags": ["permissions", "security", "allow", "deny"]
     },
