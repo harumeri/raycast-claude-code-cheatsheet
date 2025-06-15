@@ -6,7 +6,7 @@ export interface Command {
   example?: string;
   deprecated?: boolean;
   warning?: boolean;
-  new?: boolean;
+  isNew?: boolean;
   alternative?: string;
   category: "basic" | "flag" | "slash" | "thinking" | "settings" | "environment";
   tags: string[];
