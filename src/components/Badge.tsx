@@ -42,7 +42,7 @@ export function getBadgeProps({ type, budget, tokens, text, children }: BadgePro
         const displayText = tokens ? `${tokens} tokens` : `${budgetInfo.label}`;
         return {
           text: (children ? String(children) : displayText) as string,
-          color: BUDGET_COLORS[budget] as Color,
+          color: BUDGET_COLORS[budget],
         };
       }
       default:

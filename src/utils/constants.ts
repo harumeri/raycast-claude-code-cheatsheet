@@ -1,3 +1,4 @@
+import { Color } from "@raycast/api";
 import { BudgetType, CategoryType } from "../types";
 
 export const CATEGORIES: Record<CategoryType, string> = {
@@ -10,10 +11,10 @@ export const CATEGORIES: Record<CategoryType, string> = {
   environment: "Environment Variables",
 };
 
-export const BUDGET_COLORS: Record<BudgetType, string> = {
-  max: "#FF4444", // Red
-  mid: "#FF8800", // Orange
-  min: "#22C55E", // Green
+export const BUDGET_COLORS: Record<BudgetType, Color> = {
+  max: Color.Red, // Maximum budget
+  mid: Color.Orange, // Medium budget
+  min: Color.Green, // Minimum budget
 };
 
 export const BUDGET_DISPLAY: Record<BudgetType, { emoji: string; label: string; description: string }> = {
