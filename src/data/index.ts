@@ -17,7 +17,12 @@ const sectionMap: Record<CategoryType, Section> = {
   thinking: thinkingSection,
   settings: settings as Section,
   environment: environment as Section,
-  all: {} as Section, // 'all' is not a real section, so provide a dummy object.
+  all: {
+    id: "all",
+    title: "All Categories",
+    description: "All commands and keywords",
+    commands: [],
+  } as Section, // 'all' is a placeholder section with safe default values
 };
 
 const orderedSections = SECTION_ORDER.map((id) => sectionMap[id]);
