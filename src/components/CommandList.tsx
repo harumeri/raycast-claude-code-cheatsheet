@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { List, Action, ActionPanel, Icon } from "@raycast/api";
 import { Command, CategoryType, Section, ThinkingKeyword } from "../types";
 import { cheatsheetData } from "../data";
@@ -18,7 +18,17 @@ const categoryList = SECTION_ORDER.map(id => ({
 export function CommandList() {
   const [selectedCategory, setSelectedCategory] = useState<CategoryType>("all");
   const [searchText, setSearchText] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const { copyToClipboard } = useCopyToClipboard();
+
+  // Handle loading state for search/filter operations
+  useEffect(() => {
+    if (searchText || selectedCategory !== "all") {
+      setIsLoading(true);
+      const timer = setTimeout(() => setIsLoading(false), 100);
+      return () => clearTimeout(timer);
+    }
+  }, [searchText, selectedCategory]);
 
   const filteredSections = useMemo(() => {
     let sections: Section[] = cheatsheetData.sections;
@@ -290,6 +300,7 @@ export function CommandList() {
 
   return (
     <List
+      isLoading={isLoading}
       searchBarPlaceholder="Search commands, options, or keywords..."
       onSearchTextChange={setSearchText}
       searchBarAccessory={
