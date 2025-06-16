@@ -24,11 +24,11 @@
     {
       "id": "compact",
       "name": "/compact",
-      "description": "Compacts the conversation history, summarizing previous turns to save tokens and refocus the context.",
-      "usage": "/compact",
-      "example": "/compact",
+      "description": "Compact conversation with optional focus instructions to summarize previous turns and save tokens.",
+      "usage": "/compact [instructions]",
+      "example": "/compact focus on bug fixes",
       "category": "slash",
-      "tags": ["compact", "summarize", "compress"]
+      "tags": ["compact", "summarize", "compress", "focus"]
     },
     {
       "id": "config",
@@ -49,6 +49,15 @@
       "tags": ["cost", "statistics", "tokens"]
     },
     {
+      "id": "doctor",
+      "name": "/doctor",
+      "description": "Checks the health of your Claude Code installation and provides diagnostic information.",
+      "usage": "/doctor",
+      "example": "/doctor",
+      "category": "slash",
+      "tags": ["doctor", "health", "diagnostics", "check"]
+    },
+    {
       "id": "help",
       "name": "/help",
       "description": "Shows a help message with a list of available slash commands and their functions.",
@@ -58,6 +67,15 @@
       "tags": ["help", "support", "documentation"]
     },
     {
+      "id": "ide",
+      "name": "/ide",
+      "description": "Manage IDE integrations and show status of connected development environments.",
+      "usage": "/ide",
+      "example": "/ide",
+      "category": "slash",
+      "tags": ["IDE", "integration", "status", "development"]
+    },
+    {
       "id": "init",
       "name": "/init",
       "description": "Initializes a new `CLAUDE.md` file in your project, documenting the codebase to provide better context to Claude.",
@@ -65,6 +83,15 @@
       "example": "/init",
       "category": "slash",
       "tags": ["initialize", "project", "start", "CLAUDE.md", "documentation"]
+    },
+    {
+      "id": "install-github-app",
+      "name": "/install-github-app",
+      "description": "Set up Claude GitHub Actions for a repository to enable automated workflows.",
+      "usage": "/install-github-app",
+      "example": "/install-github-app",
+      "category": "slash",
+      "tags": ["GitHub", "Actions", "setup", "repository", "automation"]
     },
     {
       "id": "login",
@@ -85,6 +112,15 @@
       "tags": ["logout", "sign out", "exit", "account"]
     },
     {
+      "id": "mcp",
+      "name": "/mcp",
+      "description": "Show MCP server connection status and manage Model Context Protocol integrations.",
+      "usage": "/mcp",
+      "example": "/mcp",
+      "category": "slash",
+      "tags": ["MCP", "server", "status", "connection", "protocol"]
+    },
+    {
       "id": "memory",
       "name": "/memory",
       "description": "Opens the `CLAUDE.md` file in your editor, allowing you to view or modify Claude's contextual memory for your project.",
@@ -103,6 +139,15 @@
       "tags": ["PR", "comments", "review", "GitHub", "pull request"]
     },
     {
+      "id": "permissions",
+      "name": "/permissions",
+      "description": "Manage allow & deny tool permission rules for controlling which tools Claude can access.",
+      "usage": "/permissions",
+      "example": "/permissions",
+      "category": "slash",
+      "tags": ["permissions", "allowed-tools", "deny", "rules", "access", "control"]
+    },
+    {
       "id": "review",
       "name": "/review",
       "description": "Requests a code review from Claude for the files you've specified or staged in git.",
@@ -112,6 +157,15 @@
       "tags": ["review", "code", "check"]
     },
     {
+      "id": "release-notes",
+      "name": "/release-notes",
+      "description": "View release notes for Claude Code updates and new features.",
+      "usage": "/release-notes",
+      "example": "/release-notes",
+      "category": "slash",
+      "tags": ["release", "notes", "updates", "changelog", "version"]
+    },
+    {
       "id": "terminal-setup",
       "name": "/terminal-setup",
       "description": "Installs terminal enhancements, such as enabling Shift+Enter for multi-line input without sending.",
@@ -119,6 +173,15 @@
       "example": "/terminal-setup",
       "category": "slash",
       "tags": ["setup", "key binding", "terminal", "enhancements", "keybindings"]
+    },
+    {
+      "id": "upgrade",
+      "name": "/upgrade",
+      "description": "Upgrade to Max for higher rate limits and more Opus access.",
+      "usage": "/upgrade",
+      "example": "/upgrade",
+      "category": "slash",
+      "tags": ["upgrade", "Max", "rate limits", "Opus", "subscription"]
     },
     {
       "id": "vim",
