@@ -10,7 +10,7 @@
       "usage": "/bug",
       "example": "/bug",
       "category": "slash",
-      "tags": ["bug", "report", "issue"]
+      "tags": ["bug", "issue", "report"]
     },
     {
       "id": "clear",
@@ -19,7 +19,7 @@
       "usage": "/clear",
       "example": "/clear",
       "category": "slash",
-      "tags": ["clear", "history", "delete"]
+      "tags": ["clear", "delete", "history"]
     },
     {
       "id": "compact",
@@ -28,7 +28,7 @@
       "usage": "/compact [instructions]",
       "example": "/compact focus on bug fixes",
       "category": "slash",
-      "tags": ["compact", "summarize", "compress", "focus"]
+      "tags": ["compact", "compress", "focus", "summarize"]
     },
     {
       "id": "config",
@@ -37,7 +37,7 @@
       "usage": "/config",
       "example": "/config",
       "category": "slash",
-      "tags": ["settings", "configuration", "modify"]
+      "tags": ["configuration", "modify", "settings"]
     },
     {
       "id": "cost",
@@ -55,7 +55,7 @@
       "usage": "/doctor",
       "example": "/doctor",
       "category": "slash",
-      "tags": ["doctor", "health", "diagnostics", "check"]
+      "tags": ["check", "diagnostics", "doctor", "health"]
     },
     {
       "id": "help",
@@ -64,7 +64,7 @@
       "usage": "/help",
       "example": "/help",
       "category": "slash",
-      "tags": ["help", "support", "documentation"]
+      "tags": ["documentation", "help", "support"]
     },
     {
       "id": "ide",
@@ -73,7 +73,7 @@
       "usage": "/ide",
       "example": "/ide",
       "category": "slash",
-      "tags": ["IDE", "integration", "status", "development"]
+      "tags": ["development", "IDE", "integration", "status"]
     },
     {
       "id": "init",
@@ -82,7 +82,7 @@
       "usage": "/init",
       "example": "/init",
       "category": "slash",
-      "tags": ["initialize", "project", "start", "CLAUDE.md", "documentation"]
+      "tags": ["CLAUDE.md", "documentation", "initialize", "project", "start"]
     },
     {
       "id": "install-github-app",
@@ -91,7 +91,7 @@
       "usage": "/install-github-app",
       "example": "/install-github-app",
       "category": "slash",
-      "tags": ["GitHub", "Actions", "setup", "repository", "automation"]
+      "tags": ["Actions", "automation", "GitHub", "repository", "setup"]
     },
     {
       "id": "login",
@@ -100,7 +100,7 @@
       "usage": "/login",
       "example": "/login",
       "category": "slash",
-      "tags": ["login", "switch", "authentication", "account", "sign-in"]
+      "tags": ["account", "authentication", "login", "sign-in", "switch"]
     },
     {
       "id": "logout",
@@ -109,7 +109,7 @@
       "usage": "/logout",
       "example": "/logout",
       "category": "slash",
-      "tags": ["logout", "sign out", "exit", "account"]
+      "tags": ["account", "exit", "logout", "sign out"]
     },
     {
       "id": "mcp",
@@ -118,7 +118,7 @@
       "usage": "/mcp",
       "example": "/mcp",
       "category": "slash",
-      "tags": ["MCP", "server", "status", "connection", "protocol"]
+      "tags": ["connection", "MCP", "protocol", "server", "status"]
     },
     {
       "id": "memory",
@@ -127,7 +127,7 @@
       "usage": "/memory",
       "example": "/memory",
       "category": "slash",
-      "tags": ["memory", "edit", "CLAUDE.md"]
+      "tags": ["CLAUDE.md", "edit", "memory"]
     },
     {
       "id": "pr_comments",
@@ -136,7 +136,7 @@
       "usage": "/pr_comments",
       "example": "/pr_comments",
       "category": "slash",
-      "tags": ["PR", "comments", "review", "GitHub", "pull request"]
+      "tags": ["comments", "GitHub", "PR", "pull request", "review"]
     },
     {
       "id": "permissions",
@@ -145,7 +145,7 @@
       "usage": "/permissions",
       "example": "/permissions",
       "category": "slash",
-      "tags": ["permissions", "allowed-tools", "deny", "rules", "access", "control"]
+      "tags": ["access", "allowed-tools", "control", "deny", "permissions", "rules"]
     },
     {
       "id": "review",
@@ -154,7 +154,7 @@
       "usage": "/review",
       "example": "/review",
       "category": "slash",
-      "tags": ["review", "code", "check"]
+      "tags": ["check", "code", "review"]
     },
     {
       "id": "release-notes",
@@ -163,7 +163,7 @@
       "usage": "/release-notes",
       "example": "/release-notes",
       "category": "slash",
-      "tags": ["release", "notes", "updates", "changelog", "version"]
+      "tags": ["changelog", "notes", "release", "updates", "version"]
     },
     {
       "id": "terminal-setup",
@@ -172,7 +172,7 @@
       "usage": "/terminal-setup",
       "example": "/terminal-setup",
       "category": "slash",
-      "tags": ["setup", "key binding", "terminal", "enhancements", "keybindings"]
+      "tags": ["enhancements", "key binding", "keybindings", "setup", "terminal"]
     },
     {
       "id": "upgrade",
@@ -181,7 +181,7 @@
       "usage": "/upgrade",
       "example": "/upgrade",
       "category": "slash",
-      "tags": ["upgrade", "Max", "rate limits", "Opus", "subscription"]
+      "tags": ["Max", "Opus", "rate limits", "subscription", "upgrade"]
     },
     {
       "id": "vim",
@@ -190,7 +190,7 @@
       "usage": "/vim",
       "example": "/vim",
       "category": "slash",
-      "tags": ["Vim", "mode", "enable"]
+      "tags": ["enable", "mode", "Vim"]
     },
     {
       "id": "model",
@@ -199,7 +199,7 @@
       "usage": "/model",
       "example": "/model",
       "category": "slash",
-      "tags": ["model", "change", "AI", "configuration"]
+      "tags": ["AI", "change", "configuration", "model"]
     },
     {
       "id": "exit",
@@ -217,7 +217,7 @@
       "usage": "/status",
       "example": "/status",
       "category": "slash",
-      "tags": ["status", "account", "system", "version", "connectivity", "diagnostics"]
+      "tags": ["account", "connectivity", "diagnostics", "status", "system", "version"]
     }
   ]
 }
