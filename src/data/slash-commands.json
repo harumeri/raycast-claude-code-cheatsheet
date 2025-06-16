@@ -150,7 +150,7 @@
     {
       "id": "review",
       "name": "/review",
-      "description": "Requests a code review from Claude for the files you've specified or staged in git.",
+      "description": "Reviews a pull request and provides feedback on the proposed changes.",
       "usage": "/review",
       "example": "/review",
       "category": "slash",
