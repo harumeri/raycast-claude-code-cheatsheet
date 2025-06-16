@@ -89,7 +89,7 @@
     {
       "id": "dangerously-skip-permissions",
       "name": "--dangerously-skip-permissions",
-      "description": "Bypasses all permission prompts for tool usage, allowing Claude to execute commands without explicit approval. Use with extreme caution, as it can lead to unintended system modifications or data access. Ideal for trusted, automated workflows.",
+      "description": "Bypass all permission checks. Recommended only for sandboxes with no internet access.",
       "usage": "claude --dangerously-skip-permissions",
       "example": "claude --dangerously-skip-permissions \"fix bugs\"",
       "category": "flag",
@@ -117,18 +117,18 @@
     {
       "id": "add-dir",
       "name": "--add-dir",
-      "description": "Adds additional working directories for Claude to access, expanding its context beyond the current directory.",
-      "usage": "claude --add-dir <directory>",
-      "example": "claude --add-dir ../apps ../lib",
+      "description": "Additional directories to allow tool access to (must be absolute paths).",
+      "usage": "claude --add-dir <directories...>",
+      "example": "claude --add-dir /path/to/apps /path/to/lib",
       "category": "flag",
-      "tags": ["directory", "working", "additional", "multiple"]
+      "tags": ["directory", "working", "additional", "multiple", "absolute"]
     },
     {
       "id": "model",
       "name": "--model",
-      "description": "Sets the specific AI model to be used for the current session, overriding the default configuration.",
-      "usage": "claude --model <model-name>",
-      "example": "claude --model claude-sonnet-4-20250514",
+      "description": "Model for the current session. Provide an alias for the latest model (e.g. 'sonnet' or 'opus') or a model's full name (e.g. 'claude-sonnet-4-20250514').",
+      "usage": "claude --model <model>",
+      "example": "claude --model sonnet",
       "category": "flag",
       "tags": ["model", "selection", "AI"]
     },
