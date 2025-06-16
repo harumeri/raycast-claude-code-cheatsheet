@@ -45,8 +45,10 @@
       "description": "Manage local and global configuration settings. Allows you to customize aspects like the UI theme, default model, and other operational parameters. For example, to set the theme to dark globally, use 'claude config set -g theme dark'.",
       "usage": "claude config",
       "example": "claude config set -g theme dark",
+      "deprecated": true,
+      "alternative": "Use settings.json configuration file instead",
       "category": "basic",
-      "tags": ["config", "management", "settings"]
+      "tags": ["config", "management", "settings", "deprecated"]
     },
     {
       "id": "claude-update",
