@@ -180,6 +180,22 @@
       "tags": ["telemetry", "privacy", "statsig", "disable"]
     },
     {
+      "id": "env-claude-code-enable-telemetry",
+      "name": "CLAUDE_CODE_ENABLE_TELEMETRY",
+      "description": "Set to 1 to enable telemetry features for debugging and monitoring.",
+      "usage": "export CLAUDE_CODE_ENABLE_TELEMETRY=\"1\"",
+      "category": "environment",
+      "tags": ["telemetry", "enable", "monitoring", "debug"]
+    },
+    {
+      "id": "env-otel-metrics-exporter",
+      "name": "OTEL_METRICS_EXPORTER",
+      "description": "OpenTelemetry metrics exporter configuration (e.g., 'otlp' for OTLP protocol).",
+      "usage": "export OTEL_METRICS_EXPORTER=\"otlp\"",
+      "category": "environment",
+      "tags": ["telemetry", "opentelemetry", "metrics", "export"]
+    },
+    {
       "id": "env-http-proxy",
       "name": "HTTP_PROXY",
       "description": "Specify HTTP proxy server for network connections.",
