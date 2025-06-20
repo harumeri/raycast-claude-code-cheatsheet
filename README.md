@@ -5,6 +5,10 @@
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </div>
 
+> [!IMPORTANT]  
+> **📋 Archive Notice**  
+> This repository has been archived as the extension is currently under review for submission to the official Raycast Store. Once approved and published, the extension will be available directly through Raycast's extension marketplace.
+
 A comprehensive, interactive cheatsheet for the Claude Code CLI. Instantly access the latest commands, options, and unique thinking keywords to supercharge your development workflow.
 
 ## Features
